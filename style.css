@@ -6,37 +6,34 @@ body{
                          "main main main"
                          "section section section"
                          "footer footer footer";
-    grid-template-columns: 50vh 50vh 50vh;   
-    grid-template-rows: 300vh   100vh 200vh 200vh 50vh;            
+    grid-template-columns: 1fr 1fr 1fr;   
+    grid-template-rows: 5px 100px 95px 115px 130px 40px;         
     margin: 0;
-    padding: 0;
 }
 .banner{
-    
+    background-color: aqua;
     grid-area: banner;
-    height: 100px;
+
 }
 nav{
     grid-area: nav;
     background-color: rgb(50, 206, 50);
-    height: 10px;
 
 }
 header{
+    background-color: blue;
     grid-area: header;
 }
 main{
     background-color: gray;
     grid-area: main;
-    height: 100px;
 
 }
 section{
+    background-color: black;
     grid-area: section;
 }
 footer{
-    background-color: gray;
+    background-color: violet;
     grid-area: footer;
-    height: 100px;
-
 }
