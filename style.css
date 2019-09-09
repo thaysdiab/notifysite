@@ -1,8 +1,42 @@
 body{
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                         "banner banner banner"
+                         "header header header"
+                         "main main main"
+                         "section section section"
+                         "footer footer footer";
+    grid-template-columns: 50vh 50vh 50vh;   
+    grid-template-rows: 300vh   100vh 200vh 200vh 50vh;            
     margin: 0;
     padding: 0;
 }
+.banner{
+    
+    grid-area: banner;
+    height: 100px;
+}
 nav{
+    grid-area: nav;
     background-color: rgb(50, 206, 50);
     height: 10px;
+
+}
+header{
+    grid-area: header;
+}
+main{
+    background-color: gray;
+    grid-area: main;
+    height: 100px;
+
+}
+section{
+    grid-area: section;
+}
+footer{
+    background-color: gray;
+    grid-area: footer;
+    height: 100px;
+
 }
