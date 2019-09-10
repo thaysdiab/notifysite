@@ -7,11 +7,13 @@ body{
                          "section section section"
                          "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;   
-    grid-template-rows: 5px 100px 95px 115px 130px 40px;         
+    grid-template-rows: 8px 210px 195px 180px 150px 60px;         
     margin: 0;
 }
 .banner{
     background-color: aqua;
+    background-image: url(../notifysite/images/banner.png);
+    background-size: cover;
     grid-area: banner;
 
 }
