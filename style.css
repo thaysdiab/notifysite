@@ -10,11 +10,40 @@ body{
     grid-template-rows: 8px 210px 195px 180px 150px 60px;         
     margin: 0;
 }
+
 .banner{
-    background-color: aqua;
     background-image: url(../notifysite/images/banner.png);
     background-size: cover;
+    color: white;
     grid-area: banner;
+    margin: 0;
+    display: flex; 
+}
+
+.banner div:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+    margin-left: 50px;
+}
+
+.banner div img{
+    width: 150px;
+}
+.banner h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 15pt;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+}
+
+.banner p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 7pt;
+    margin-left: 50px;
+    line-height: 3px;
 
 }
 nav{
