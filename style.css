@@ -11,6 +11,24 @@ body{
     margin: 0;
 }
 
+button{
+
+    background-color: rgba(10,10,10,0.6);
+    border-style: none;
+    color: white;
+    margin: 0px 10px 10px 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.ios{
+
+    margin-left: 50px;
+}
+.banner span{
+     color: #89c179;
+}
+
 .banner{
     background-image: url(../notifysite/images/banner.png);
     background-size: cover;
@@ -19,15 +37,20 @@ body{
     margin: 0;
     display: flex; 
 }
+.banner div button:hover{
+    background-color: #24c058;
+}
 
 .banner div:nth-child(2){
     display: flex;
     align-items: flex-end;
     margin-left: 50px;
+    
 }
 
 .banner div img{
     width: 150px;
+
 }
 .banner h1{
     font-family: 'Pacifico', cursive;
@@ -53,18 +76,20 @@ nav{
 }
 
 header{
-    grid-area: header;
-    font-size: 5pt;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.973);
+    display: flex;
+    font-size: 5pt;
+    grid-area: header;
+    justify-content: center;
+    
     
    }
 
    header img{
        border-radius: 100px;
-       background-color: #89c179;
-       border-color: #89c179;
+       background-color: #24c058;
+       border-color: #24c058;
        border-style: solid;
        border-bottom-width: 10px;
        border-top-width: 10px;
@@ -76,6 +101,7 @@ header{
    }
 
    header div{
+       font-family: "roboto", sans-serif;
        display: flex;
        align-items: center;
        text-align: center;
@@ -83,10 +109,19 @@ header{
 }
 
 .icones div{
+    text-decoration: wavy;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    
+    
 }
+header div img{
+    height: auto;
+    width: 21px;
+}
+
+
 main{
     background-color: gray;
     grid-area: main;
