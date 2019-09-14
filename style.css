@@ -30,7 +30,7 @@
     text-decoration: none;
     margin-left: 30px;
     margin-top: 50px;
-    
+      
 }
 
 .banner p {
@@ -49,9 +49,10 @@ body {
     display: grid;
     grid-template-areas: "nav nav nav" "banner banner banner" "header header header" "main main main" "section section section" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8px 210px 380px 480px 320px 60px;
+    grid-template-rows: 8px 210px 380px 480px 400px 60px;
     margin: 0;
     padding: 0;
+    font-family: 'roboto',sans-serif;
 }
 
 button {
@@ -163,9 +164,9 @@ main p {
 
 }
 .redes button img {
-    width: 25px;
-    display: inline-flex;
-    position: relative;
+    width: 18px;
+    display: flex;
+    justify-content: center;
    align-content: center;
 }
 .redes button:hover{
@@ -198,9 +199,15 @@ section a img {
 section p {
     font-size: 12px;
     font-style: italic;
+  
 }
 
 footer {
-    background-color: violet;
+    align-items: center;
+    background-color: rgb(227, 227, 227);
+    color: rgb(165, 165, 165);
+    display: flex;
+    font-size: 7pt;
     grid-area: footer;
+    justify-content: space-evenly;
 }
