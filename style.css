@@ -11,10 +11,14 @@
     background-color: #2dcc70;
 }
 
+.banner div button img{
+    width: 10px;
+    align-items: center;
+
+}
 .banner div img {
     width: 150px;
     
-   
 }
 
 .banner div:nth-child(2) {
@@ -65,11 +69,14 @@ button {
     border-radius: 50%;
     
 }
-
-.banner div button img{
-    width: 10px;
+footer {
     align-items: center;
-
+    background-color: rgb(227, 227, 227);
+    color: rgb(165, 165, 165);
+    display: flex;
+    font-size: 7pt;
+    grid-area: footer;
+    justify-content: space-evenly;
 }
 .inputbotao {
     background-color: #2dcc70;
@@ -79,10 +86,6 @@ button {
     margin-left: 20px;
 }
 
-nav {
-    grid-area: nav;
-    background-color: #2dcc70;
-}
 
 
 header {
@@ -138,17 +141,25 @@ main {
     display: block;
     justify-content: center;
 }
-main p {
-    color: #a3a3a3;
-    margin: 10px;}
-
- main input {
+main input {
     border-bottom-left-radius: 12%;
     border: 0px;
     border-bottom-right-radius: 12%;
- }
- .ppequeno {
-    font-size: 10px;
+    
+}
+main p {
+    color: #a3a3a3;
+    margin: 10px;
+    font-size: 8pt;
+
+}
+
+nav {
+    grid-area: nav;
+    background-color: #2dcc70;
+}
+.ppequeno {
+     font-size: 10px;
     font-style: italic;
 }
 
@@ -163,27 +174,22 @@ main p {
 
 
 }
+.redes button:hover{
+    background-color: #2dcc70;
+}
 .redes button img {
     width: 18px;
     display: flex;
     justify-content: center;
    align-content: center;
 }
-.redes button:hover{
-    background-color: #2dcc70;
-}
+
 section {
     background-color: white;
     grid-area: section;
     margin: 10px;
     color: #a3a3a3;
     text-align: center;
-}
-section h3 {
-    color: black;
-}
-section h5 {
-    color: black;
 }
 section a {
     display: inline-flex;
@@ -196,18 +202,119 @@ section a:hover {
 section a img {
     width: 35px;
 }
+section h3 {
+    color: black;
+}
+section h5 {
+    color: black;
+}
+
 section p {
     font-size: 12px;
     font-style: italic;
   
 }
-
-footer {
-    align-items: center;
-    background-color: rgb(227, 227, 227);
-    color: rgb(165, 165, 165);
+@media (min-width:580px){
+    body {
+        display: grid;
+        grid-template-areas: "nav nav nav" "banner banner banner" "header header header" "main main main" "section section section" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 8px 210px 200px 245px 345px 60px;
+        margin: 0;
+        padding: 0;
+        font-family: 'roboto',sans-serif;
+    }
+    header div {
+        font-family: "roboto", sans-serif;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;  
+        
+     }
+main{
+    grid-area: main;
+    text-align: center;
+    margin-top: 10px;
     display: flex;
-    font-size: 7pt;
-    grid-area: footer;
-    justify-content: space-evenly;
+    justify-content: center;
+    
+    }
 }
+
+@media(min-width:760px){
+    .banner div{
+        margin-left: 60px;
+    }
+    body {
+        display: grid;
+        grid-template-areas: "nav nav nav" "banner banner banner" "header header header" "main main main" "section section section" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 8px 210px 180px 245px 320px 60px;
+        margin: 0;
+        padding: 0;
+        font-family: 'roboto',sans-serif;
+    }
+header{
+    margin-top: 0px;
+}
+@media(min-width:1060px){
+    .banner h1{
+         margin-left: 80px;
+        font-size: 22pt;
+    }
+    .banner :nth-child(2){
+        margin-left: 80px;
+        font-size: 12pt;
+}
+.banner :nth-child(3){
+    margin-left: 80px;
+    font-size: 12pt;}
+.banner button{
+    margin-left: 80px;
+    width: 30px;
+    height: 30px;
+}
+.banner div button img{
+    width: 10px;
+    margin-left: -1px;
+    align-items: center;
+
+}
+body {
+    display: grid;
+    grid-template-areas: "nav nav nav" "banner banner banner" "header header header" "main main main" "section section section" "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 8px 230px 180px 240px 260px 60px;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto',sans-serif;}
+.banner div img{
+   margin-left: 350px;
+   width: 180px;
+}
+
+main{
+    grid-area: main;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+.um{
+    margin-right: 200px;
+}
+main div{
+    margin-right:10px;
+    
+}
+.video{
+    margin-right: 300px;
+    width: 320px;
+    height: 210px;
+   }
+}}
